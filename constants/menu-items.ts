@@ -1,67 +1,22 @@
-import React from "react";
-import {
-  Dashboard,
-  ShoppingCart,
-  People,
-  AttachMoney,
-  AddShoppingCart,
-  Done,
-  Business,
-  HomeWork,
-  Person,
-} from "@styled-icons/material";
+import React from 'react';
+import { Dashboard, People, Done } from '@styled-icons/material';
+import { ListOl } from 'styled-icons/bootstrap';
 
 const MENU_OPTIONS: MenuOption[] = [
   {
-    name: "Dashboard",
+    name: 'Dashboard',
     icon: Dashboard,
-    url: "/",
+    url: '/',
   },
   {
-    name: "Orders",
-    icon: ShoppingCart,
-    url: "/orders",
-    subItems: [
-      {
-        name: "New",
-        icon: AddShoppingCart,
-        url: "/new-orders",
-      },
-      {
-        name: "Completed",
-        icon: Done,
-        url: "/completed-orders",
-      },
-    ],
-  },
-  {
-    name: "Customers",
+    name: 'Customers',
     icon: People,
-    url: "/customers",
-    subItems: [
-      {
-        name: "Corporate",
-        icon: Business,
-        url: "/corporate",
-      },
-      {
-        name: "SMB",
-        icon: HomeWork,
-        url: "/smb",
-        subItems: [
-          {
-            name: "Retail",
-            icon: Person,
-            url: "/retail",
-          },
-        ],
-      },
-    ],
+    url: '/customers',
   },
   {
-    name: "Inventory",
-    icon: AttachMoney,
-    url: "/inventory",
+    name: 'Global Items',
+    icon: ListOl,
+    url: '/inventory',
   },
 ];
 
